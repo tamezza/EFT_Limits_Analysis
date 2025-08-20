@@ -1,0 +1,9 @@
+name: statistical_analysis
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - conda-forge::root=6.34.4
+  - pre-commit
+  - pytest
+  - pip

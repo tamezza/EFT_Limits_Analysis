@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools >= 61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = { find = { include = ["statistical_analysis*"] } }
+include-package-data = true
+
+[project]
+name = "statistical_analysis"
+version = "0.1.0"
+requires-python = ">=3.11"
+description = "HH4b statistical analysis tools"
+readme = "README.md"
+authors = [
+        {name = 'The ATLAS Collaboration'},
+]
+dependencies = [
+    "cabinetry@git+https://github.com/scikit-hep/cabinetry@cd0af1b",
+    "quickstats==0.8.3.5.9",
+    "matplotlib",
+    "uproot",
+    "pyhf",
+    "hist",
+    "pyarrow",
+    "mplhep",
+    "fsspec-xrootd",
+    "scikit-learn==1.6",
+    "tensorflow",
+    "vector",
+]
