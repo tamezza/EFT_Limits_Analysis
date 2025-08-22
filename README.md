@@ -38,12 +38,20 @@ dependencies:
   - pip
 ```
 🔧 How to use it
-1-  Remove the old environment (optional, if you want a clean setup):
+1.  Remove the old environment (optional, if you want a clean setup):
 ```bash
 conda deactivate
 conda env remove -n statistical_analysis
 ```
-2-  Create the new environment:
+2.  Create the new environment:
 ```bash
 conda env create -f statistical_analysis.yaml
+```
+3.  Activate it:
+4.  ```bash
+    conda activate statistical_analysis
+```
+4.  Run your script:
+```bash
+python generate_fit_inputs.py --config ../configs/EFTVBF_example.yaml
 ```
